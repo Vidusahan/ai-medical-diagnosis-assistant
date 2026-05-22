@@ -1,0 +1,114 @@
+# ===========================================
+# AI Medical Diagnosis Assistant — .gitignore
+# ===========================================
+
+# ── Secrets & environment ──────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# ── Python ─────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+wheels/
+.installed.cfg
+lib/
+lib64/
+MANIFEST
+
+# ── Virtual environments ───────────────────
+.venv/
+venv/
+env/
+ENV/
+.Python
+
+# ── Testing & coverage ─────────────────────
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+*.cover
+nosetests.xml
+test-results/
+
+# ── Jupyter notebooks ──────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Data files ─────────────────────────────
+data/raw/
+data/processed/
+*.pdf
+*.csv
+*.json
+!tests/fixtures/*.json
+*.pkl
+*.pickle
+*.parquet
+*.h5
+*.hdf5
+chroma_db/
+vectorstore/
+
+# ── Logs & traces ──────────────────────────
+*.log
+logs/
+langsmith_traces/
+mlruns/
+
+# ── OS files ───────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── IDE & editors ──────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ── Docker ─────────────────────────────────
+.dockerignore
+
+# ── Streamlit ──────────────────────────────
+.streamlit/secrets.toml
+
+# ── Pinecone / vector cache ────────────────
+pinecone_cache/
+embeddings_cache/
+.cache/
+
+# ── OpenFDA cache ──────────────────────────
+openfda_cache/
+drug_cache/
+
+# ── Build / dist ───────────────────────────
+*.pyc
+*.pyo
+site/
+docs/_build/
